@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod1
+  labels:
+    app: red-app
+spec:
+  containers:
+    - name: red-container
+      image: longflew/ingress:REDPAGE
+      ports:
+        - containerPort: 80
